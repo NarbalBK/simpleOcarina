@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="simpleOcarina" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ocarina" translatesAutoresizingMaskIntoConstraints="NO" id="7st-la-b9e">
+                                <rect key="frame" x="-33" y="20" width="480" height="662"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ib5-8e-Wse">
+                                <rect key="frame" x="76" y="211.66666666666666" width="82" height="82.999999999999972"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="buttonSupEsq"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bp7-Y5-WUQ">
+                                <rect key="frame" x="271" y="225" width="56" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="buttonSupDir"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hB9-lK-eP6">
+                                <rect key="frame" x="81.666666666666686" y="341" width="95" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="buttonInfEsq"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LV3-r6-czy">
+                                <rect key="frame" x="251.66666666666663" y="352.66666666666669" width="71" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="buttonInfDir"/>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gjO-Hw-9ZR">
+                                <rect key="frame" x="20" y="629" width="49" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="Qap-Zi-neN"/>
+                                    <constraint firstAttribute="width" constant="47" id="uYc-C4-Ecw"/>
+                                </constraints>
+                            </switch>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wind" translatesAutoresizingMaskIntoConstraints="NO" id="KCD-vQ-Vws">
+                                <rect key="frame" x="14" y="677" width="70" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="LOy-59-Nnm"/>
+                                    <constraint firstAttribute="height" constant="39" id="iiU-KG-KMh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gjO-Hw-9ZR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5vB-Ta-b8s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KCD-vQ-Vws" secondAttribute="bottom" constant="20" id="BLn-rK-WWH"/>
+                            <constraint firstItem="KCD-vQ-Vws" firstAttribute="top" secondItem="gjO-Hw-9ZR" secondAttribute="bottom" constant="17" id="PSx-25-z6h"/>
+                            <constraint firstItem="KCD-vQ-Vws" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="14" id="RpD-pp-bVW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonInfDir" destination="LV3-r6-czy" id="Gqg-lU-G4F"/>
+                        <outlet property="buttonInfEsq" destination="hB9-lK-eP6" id="quH-wR-9QR"/>
+                        <outlet property="buttonSupDir" destination="bp7-Y5-WUQ" id="etK-X1-yxK"/>
+                        <outlet property="buttonSupEsq" destination="Ib5-8e-Wse" id="zKi-HZ-UmX"/>
+                        <outlet property="imageWind" destination="KCD-vQ-Vws" id="aJT-6Q-1p5"/>
+                        <outlet property="ocarina" destination="7st-la-b9e" id="Dr2-tN-tEg"/>
+                        <outlet property="switchWind" destination="gjO-Hw-9ZR" id="Be4-id-ZTB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="97.826086956521749"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="buttonInfDir" width="154" height="154"/>
+        <image name="buttonInfEsq" width="206" height="206"/>
+        <image name="buttonSupDir" width="124" height="124"/>
+        <image name="buttonSupEsq" width="180" height="180"/>
+        <image name="ocarina" width="1033" height="1362"/>
+        <image name="wind" width="335" height="248"/>
+    </resources>
+</document>
